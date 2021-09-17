@@ -20,6 +20,7 @@ app.use('/admin',require('./routes/admin/register'));
 app.use('/admin',require('./routes/admin/login'));
 app.use('/',require('./routes/admin/alladmin'));
 app.use('/admin',require('./routes/admin/createservice'))
+app.use('/admin',require('./routes/admin/orderList'))
 
 //customer
 app.use('/customer',require('./routes/customer/register'));

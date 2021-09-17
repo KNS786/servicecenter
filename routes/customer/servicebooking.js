@@ -5,8 +5,8 @@ const customer=require('../../model/Customer/customer1')
 //user make new order 
 
 router.post('/booking',async function(req,res){
-    let {username,companyname,requiredService,deliveryDate}=req.body;
-    let query={companyname:companyname,orderList:[]}
+    let {username,companyownername,companyname,requiredService,deliveryDate}=req.body;
+    let query={companyownername:companyownername,companyname:companyname,orderList:[]}
     let params={};
     let user=await customer.find({username:username});
     console.log(user);

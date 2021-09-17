@@ -5,6 +5,9 @@ const booking=new order({
     companyname:{
         type:String
     },
+    companyownername:{
+      type:String
+    },
     orderList:{
         type:Array,
         default:[]
@@ -12,5 +15,5 @@ const booking=new order({
 
 })
 
-module.exports=mongoose.model('booking',booking);
+module.exports=mongoose.model('bookings',booking);
 
